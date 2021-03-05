@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		955F23BA25F243BB00514401 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955F23B925F243BB00514401 /* AppDelegate.swift */; };
 		955F23BC25F243BB00514401 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955F23BB25F243BB00514401 /* SceneDelegate.swift */; };
-		955F23BE25F243BB00514401 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955F23BD25F243BB00514401 /* ContentView.swift */; };
 		955F23C125F243BB00514401 /* LocalStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 955F23BF25F243BB00514401 /* LocalStorage.xcdatamodeld */; };
 		955F23C325F243BD00514401 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 955F23C225F243BD00514401 /* Assets.xcassets */; };
 		955F23C625F243BD00514401 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 955F23C525F243BD00514401 /* Preview Assets.xcassets */; };
 		955F23C925F243BD00514401 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 955F23C725F243BD00514401 /* LaunchScreen.storyboard */; };
+		955F23D525F2448800514401 /* StudentListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955F23D425F2448800514401 /* StudentListCell.swift */; };
+		955F23D925F244D500514401 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955F23D825F244D500514401 /* Student.swift */; };
+		955F23DC25F245A800514401 /* StudentListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955F23DB25F245A800514401 /* StudentListScreen.swift */; };
+		955F23DF25F245B900514401 /* AddStudentDataScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955F23DE25F245B900514401 /* AddStudentDataScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		955F23B625F243BB00514401 /* LocalStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		955F23B925F243BB00514401 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		955F23BB25F243BB00514401 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		955F23BD25F243BB00514401 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		955F23C025F243BB00514401 /* LocalStorage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocalStorage.xcdatamodel; sourceTree = "<group>"; };
 		955F23C225F243BD00514401 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		955F23C525F243BD00514401 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		955F23C825F243BD00514401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		955F23CA25F243BD00514401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		955F23D425F2448800514401 /* StudentListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListCell.swift; sourceTree = "<group>"; };
+		955F23D825F244D500514401 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		955F23DB25F245A800514401 /* StudentListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListScreen.swift; sourceTree = "<group>"; };
+		955F23DE25F245B900514401 /* AddStudentDataScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentDataScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +64,11 @@
 		955F23B825F243BB00514401 /* LocalStorage */ = {
 			isa = PBXGroup;
 			children = (
+				955F23D325F2446E00514401 /* screens */,
+				955F23D225F2446600514401 /* model */,
+				955F23D125F2445F00514401 /* cells */,
 				955F23B925F243BB00514401 /* AppDelegate.swift */,
 				955F23BB25F243BB00514401 /* SceneDelegate.swift */,
-				955F23BD25F243BB00514401 /* ContentView.swift */,
 				955F23C225F243BD00514401 /* Assets.xcassets */,
 				955F23C725F243BD00514401 /* LaunchScreen.storyboard */,
 				955F23CA25F243BD00514401 /* Info.plist */,
@@ -76,6 +84,31 @@
 				955F23C525F243BD00514401 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		955F23D125F2445F00514401 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				955F23D425F2448800514401 /* StudentListCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		955F23D225F2446600514401 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				955F23D825F244D500514401 /* Student.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		955F23D325F2446E00514401 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				955F23DB25F245A800514401 /* StudentListScreen.swift */,
+				955F23DE25F245B900514401 /* AddStudentDataScreen.swift */,
+			);
+			path = screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +182,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				955F23BA25F243BB00514401 /* AppDelegate.swift in Sources */,
+				955F23D925F244D500514401 /* Student.swift in Sources */,
 				955F23C125F243BB00514401 /* LocalStorage.xcdatamodeld in Sources */,
 				955F23BC25F243BB00514401 /* SceneDelegate.swift in Sources */,
-				955F23BE25F243BB00514401 /* ContentView.swift in Sources */,
+				955F23D525F2448800514401 /* StudentListCell.swift in Sources */,
+				955F23DC25F245A800514401 /* StudentListScreen.swift in Sources */,
+				955F23DF25F245B900514401 /* AddStudentDataScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
